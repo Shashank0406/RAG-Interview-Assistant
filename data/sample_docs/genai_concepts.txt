@@ -1,0 +1,144 @@
+Generative AI Concepts and Interview Preparation Guide
+
+1. FOUNDATIONAL CONCEPTS
+
+Machine Learning Fundamentals:
+- Supervised Learning: Training with labeled data (classification, regression)
+- Unsupervised Learning: Finding patterns in unlabeled data (clustering, dimensionality reduction)
+- Reinforcement Learning: Learning through interaction and rewards
+
+Deep Learning:
+- Neural Networks: Interconnected nodes that process information
+- Convolutional Neural Networks (CNNs): Specialized for image processing
+- Recurrent Neural Networks (RNNs): Handle sequential data
+- Transformers: Attention-based architectures for sequence processing
+
+2. GENERATIVE AI TECHNIQUES
+
+Text Generation:
+- GPT (Generative Pre-trained Transformer) models
+- BERT and other encoder-only models
+- T5 and BART (encoder-decoder architectures)
+
+Image Generation:
+- GANs (Generative Adversarial Networks)
+- Diffusion Models (Stable Diffusion, DALL-E)
+- Variational Autoencoders (VAEs)
+
+Multimodal Models:
+- CLIP: Connects text and images
+- DALL-E: Text-to-image generation
+- GPT-4V: Vision-language models
+
+3. RAG (Retrieval Augmented Generation)
+
+What is RAG?
+RAG combines retrieval systems with generative models to provide more accurate and up-to-date responses. Instead of relying solely on trained knowledge, RAG retrieves relevant information from a knowledge base before generating answers.
+
+Key Components:
+- Document Ingestion: Processing and chunking documents
+- Vector Embeddings: Converting text to numerical representations
+- Vector Database: Storing and searching embeddings efficiently
+- Retrieval: Finding relevant documents for a query
+- Generation: Using retrieved context to generate answers
+
+Popular RAG Frameworks:
+- LangChain: Python framework for building LLM applications
+- LlamaIndex: Data framework for LLM applications
+- Haystack: Open-source framework for building search systems
+
+4. PROMPT ENGINEERING
+
+Techniques:
+- Zero-shot prompting: Direct instructions without examples
+- Few-shot prompting: Providing examples in the prompt
+- Chain-of-thought: Breaking down reasoning step-by-step
+- Self-consistency: Generating multiple responses and selecting the best
+
+Best Practices:
+- Be specific and clear
+- Provide context when needed
+- Use delimiters to separate sections
+- Specify output format
+- Give the model time to think
+
+5. MODEL EVALUATION AND METRICS
+
+Text Generation Metrics:
+- BLEU: Measures n-gram overlap with reference text
+- ROUGE: Recall-oriented metric for summarization
+- Perplexity: Measures how well the model predicts text
+
+RAG-Specific Metrics:
+- Context Relevance: How relevant retrieved documents are to the query
+- Answer Faithfulness: How well the answer matches the retrieved context
+- Answer Relevance: How well the answer addresses the question
+
+6. DEPLOYMENT AND SCALING
+
+Model Optimization:
+- Quantization: Reducing model precision for faster inference
+- Distillation: Training smaller models to mimic larger ones
+- Pruning: Removing unnecessary parameters
+
+Infrastructure:
+- GPU/TPU utilization
+- Model serving with FastAPI, Flask
+- Containerization with Docker
+- Orchestration with Kubernetes
+
+7. ETHICAL CONSIDERATIONS
+
+Bias and Fairness:
+- Data bias detection and mitigation
+- Fair representation in training data
+- Bias evaluation metrics
+
+Safety and Alignment:
+- Content filtering and moderation
+- Fact-checking and hallucination detection
+- Alignment with human values
+
+8. INTERVIEW PREPARATION TOPICS
+
+Core Skills:
+- Python programming (pandas, numpy, transformers)
+- Deep learning frameworks (PyTorch, TensorFlow)
+- MLOps practices (version control, CI/CD)
+- Cloud platforms (AWS, GCP, Azure)
+
+System Design:
+- Scalable ML pipelines
+- Data processing architectures
+- Model serving systems
+- Monitoring and logging
+
+Problem-Solving:
+- Algorithm design for ML tasks
+- Performance optimization
+- Debugging ML systems
+- A/B testing and experimentation
+
+9. EMERGING TRENDS
+
+- Multimodal AI: Combining text, image, audio, video
+- Agent systems: AI agents that can perform complex tasks
+- Federated Learning: Training models across distributed devices
+- Edge AI: Running models on resource-constrained devices
+- Synthetic data generation for training
+
+10. PRACTICAL PROJECTS FOR INTERVIEWS
+
+Recommended Projects:
+1. RAG chatbot with document Q&A
+2. Fine-tuned model for specific domain
+3. Multimodal application (text-to-image)
+4. AI agent with tool use capabilities
+5. Model evaluation and benchmarking suite
+6. Deployed ML application with monitoring
+
+Each project should demonstrate:
+- End-to-end implementation
+- Best practices in code organization
+- Evaluation and testing
+- Documentation and deployment
