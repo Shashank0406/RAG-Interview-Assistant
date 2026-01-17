@@ -24,9 +24,11 @@ uvicorn>=0.24.0
 
 # Document processing
 PyPDF2>=3.0.0
+PyMuPDF>=1.23.0  # Better PDF processing than PyPDF2
 python-docx>=1.1.0
 beautifulsoup4>=4.12.0
 requests>=2.31.0
+lxml>=4.9.0  # Better HTML parsing
 
 # Utilities
 python-dotenv>=1.0.0

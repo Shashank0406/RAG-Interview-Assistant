@@ -155,15 +155,41 @@ This project touches on all the hot topics you'll get asked about:
 
 ## 🚢 Getting It Online
 
-### Docker (I Might Add This Later)
+### Docker Deployment
+
+**Quick Start:**
 ```bash
+# Build and run with Docker Compose
+docker-compose up --build
+
+# Or build and run manually
 docker build -t genai-interview .
-docker run -p 8501:8501 genai-interview
+docker run -p 8501:8501 -v $(pwd)/data:/app/data genai-interview
+```
+
+**With API Keys:**
+```bash
+# Set environment variables
+OPENAI_API_KEY=your_key ANTHROPIC_API_KEY=your_key docker-compose up
+
+# Or create .env file
+echo "OPENAI_API_KEY=your_key" > .env
+echo "ANTHROPIC_API_KEY=your_key" >> .env
+docker-compose up
+```
+
+**Production Setup:**
+```bash
+# Run with nginx reverse proxy
+docker-compose --profile nginx up --build
+
+# Scale the application
+docker-compose up --scale genai-assistant=3
 ```
 
 ### Cloud Options
-- **Streamlit Cloud**: Just push to GitHub and boom
-- **Heroku**: Container-friendly deployment
+- **Streamlit Cloud**: Just push to GitHub and boom - it deploys automatically
+- **Heroku**: Container-friendly deployment with `git push heroku main`
 - **AWS/GCP**: For when you need it to handle millions of users
 
 ## 🤝 Want To Help Make It Better?
